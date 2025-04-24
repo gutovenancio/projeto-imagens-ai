@@ -1,0 +1,269 @@
+body{
+  background-color: #f5f7fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho {
+  background-color: #fff; /* Opcional: cor de fundo para o cabeçalho */
+  display: flex;
+  justify-content: space-between; /* Espaça os itens horizontalmente */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 1rem 1.5rem; /* Adiciona um pouco de espaçamento interno */
+  position: fixed; /* Fixa o cabeçalho no topo */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+header h1{
+    color: #1a1a1a;
+    font-size: 1.75rem;
+    margin: 0;
+    font-weight: 800;
+    text-align: center;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Removi a margem padrão da ul */
+  display: flex; /* Alinha os itens da lista horizontalmente */
+  gap: 1rem; /* Espaçamento entre os links */
+}
+
+header nav ul li a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+header nav ul li a:hover {
+  color: #005999;
+}
+
+h2{
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: 600;
+}
+
+p{
+    color: #555;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+a{
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem
+}
+
+a:hover{
+    color: #005999;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.decoracao{
+  flex: 1;
+  text-align: center;
+}
+
+.decoracao img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+form{
+  flex: 1;
+  max-width: 500px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],form input[type="email"],form textarea{
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button{
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+form button:active {
+  background-color: #004b80;
+}
+
+table{
+    width: 90% ;
+    margin-top: 1.25rem;
+    border-collapse: collapse;
+    font-size: 1rem;
+    margin: 1rem  auto;
+}
+
+th{
+    background-color: #0077cc;
+    color: white;
+    padding: 0.75rem;
+}
+
+td{
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.esconder{
+    display: none;
+}
+
+.imagem-centralizada {
+    display: block;
+    margin:1rem auto;
+  }
+  
+  .voltar-topo {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .voltar-topo:hover {
+    background-color: #005599;
+  }
+  
+
+  .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de largura igual */
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo dos cards */
+  .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  /* Imagens dentro dos cards */
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+  .galeria-grid {
+    grid-template-columns: 1fr 1fr; /* 2 colunas no tablet/celular */
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-grid {
+    grid-template-columns: 1fr; /* 1 coluna em telas bem pequenas */
+  }
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 7rem auto 3rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.sobre-texto {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.sobre-texto ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sobre-texto li {
+  margin-bottom: 0.5rem;
+}
+
+.sobre-imagem img {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .sobre-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .sobre-texto ul {
+    padding-left: 0;
+  }
+}
+
