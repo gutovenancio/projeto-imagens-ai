@@ -6,16 +6,16 @@ body{
 }
 
 .cabecalho {
-  background-color: #fff; /* Opcional: cor de fundo para o cabeçalho */
+  background-color: #fff; 
   display: flex;
-  justify-content: space-between; /* Espaça os itens horizontalmente */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-  padding: 1rem 1.5rem; /* Adiciona um pouco de espaçamento interno */
-  position: fixed; /* Fixa o cabeçalho no topo */
+  justify-content: space-between;
+  align-items: center; 
+  padding: 1rem 1.5rem; 
+  position: fixed; 
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+  z-index: 1000;
 }
 
 header h1{
@@ -28,9 +28,9 @@ header h1{
 header nav ul {
   list-style: none;
   padding: 0;
-  margin: 0; /* Removi a margem padrão da ul */
-  display: flex; /* Alinha os itens da lista horizontalmente */
-  gap: 1rem; /* Espaçamento entre os links */
+  margin: 0; 
+  display: flex; 
+  gap: 1rem;
 }
 
 header nav ul li a {
@@ -185,14 +185,14 @@ td{
 
   .galeria-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de largura igual */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 1.5rem;
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
   }
   
-  /* Estilo dos cards */
+  
   .card {
     background-color: white;
     border: 1px solid #ddd;
@@ -202,7 +202,7 @@ td{
     border-radius: 8px;
   }
   
-  /* Imagens dentro dos cards */
+
   .card img {
     width: 100%;
     height: auto;
@@ -212,13 +212,13 @@ td{
 
   @media (max-width: 768px) {
   .galeria-grid {
-    grid-template-columns: 1fr 1fr; /* 2 colunas no tablet/celular */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 480px) {
   .galeria-grid {
-    grid-template-columns: 1fr; /* 1 coluna em telas bem pequenas */
+    grid-template-columns: 1fr; 
   }
 }
 
